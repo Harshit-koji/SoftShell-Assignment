@@ -1,0 +1,18 @@
+
+[
+    {
+        "id": 1,
+        "image": "jsonImage/kira.webp",
+        "say": "Selling my unused licenses was unbelievably easy. Within hours, I had a quote and got paid the same day. Super fast, super simple!",
+        "name": "— Priya Sharma",
+        "work": "IT Manager, CloudNix Solutions"
+    },
+    {
+        "id": 2,
+        "image": "jsonImage/saatvik.webp",
+        "say": "I wasn't sure what to expect, but their support team guided me through every step. Got a great payout too!",
+        "name": "— James Carter",
+        "work": "Operations Lead, TechPro Industries"
+    }
+]
+

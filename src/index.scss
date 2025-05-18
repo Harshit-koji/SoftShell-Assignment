@@ -1,0 +1,57 @@
+
+@import "var" ;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  
+
+  background-color: #041028;
+
+}
+
+body{
+    background-color: #041028 !important;
+}
+
+// defining  height 
+
+.fullHeight{
+    height: 90vh;
+}
+
+.boxShadow{
+  box-shadow: 0 0 2rem red;
+}
+
+// Common styling for all page.
+.common-border::after{
+    content: "";
+    display: block;
+    border-bottom: 5px solid $bg-white; 
+    position: absolute;
+     width: 7rem ; 
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  }
+
+
+  .bg-icon{
+background-color: $custom-purple  ;
+  }
+  .icon-color{
+color:  $icon-purple;
+  }
+
+

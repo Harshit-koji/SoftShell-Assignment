@@ -31,7 +31,7 @@ body.dark-theme {
 }
 
 body.light-theme {
-  background-color: $bg-white;
+  background-color: $bg-ccc;
  --text-color : #000;
 }
 
@@ -45,7 +45,16 @@ color: var(--text-color) !important;
 }
 
 .boxShadow{
-  box-shadow: 0 0 2rem red;
+  box-shadow: 0 0 1.5rem #00ffee;
+}
+.dropShadow {
+    filter: drop-shadow(rgb(89, 89, 240) 0px 0px 1.3rem);
+}
+.dropShadowGreen {
+    filter: drop-shadow(rgb(89, 240, 104) 0px 0px 1.3rem);
+}
+.dropShadowDark {
+    filter: drop-shadow(#000000 0px 0px 1.3rem);
 }
 
 .nav-link:focus,

@@ -9,6 +9,7 @@ export const useThemeStore = create((set) => ({
       const newMode = !state.mode;
       localStorage.setItem('theme', newMode ? 'light' : 'dark');
       return { mode: newMode };
+      
     });
   },
 }));

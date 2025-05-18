@@ -2,13 +2,23 @@
 
 
 
-.nav-item  .nav-link{
-    color:  $bg-white;
+
+.nav-link{
+
+    transition: shadow ease-in-out .3s;
+ cursor: pointer;;
+    &:hover{
+        text-shadow: 0 0 1rem #00ffee !important;
+    }
 }
 
 
-.bg-header-background{
- color:$bg-white;
 
-}
+
+
+
+
+
+
+
 

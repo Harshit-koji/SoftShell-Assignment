@@ -259,6 +259,10 @@ src/
     - Page sections animate on scroll/mount  
     - Hero and form sections smoothly enter screen
 
+12. **Updating SEO meta tags and page title **  
+    -  meta name and content 
+    -  meta property and content
+
 ---
 
 ## 📝 Final Notes

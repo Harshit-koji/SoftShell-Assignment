@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #041028;
+}
+
+body {
+  transition: background-color 0.6s ease, color 0.4s ease;
+  --text-color: $bg-white ;
+}
+
+body.dark-theme {
+  background-color: #041028;
+  --text-color: #fff;
+}
+
+body.light-theme {
+  background-color: #ede3e3;
+  --text-color: #000;
+}
+
+.theme-text {
+  color: var(--text-color) !important;
+}
+
+.fullHeight {
+  height: 90vh;
+}
+
+.boxShadow {
+  box-shadow: 0 0 1.5rem #00ffee;
+}
+
+.dropShadow {
+  filter: drop-shadow(rgb(89, 89, 240) 0px 0px 1.3rem);
+}
+
+.dropShadowGreen {
+  filter: drop-shadow(rgb(89, 240, 104) 0px 0px 1.3rem);
+}
+
+.dropShadowDark {
+  filter: drop-shadow(#000000 0px 0px 1.3rem);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  text-decoration: none !important;
+  color: var(--text-color) !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+}
+
+.common-border::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid var(--text-color);
+  position: absolute;
+  width: 7rem;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.bg-icon {
+  background-color: #000000;
+}
+
+.icon-color {
+  color: #30D5C8;
+}
+
+/* Light theme */
+.light-carousel .carousel-control-prev-icon,
+.light-carousel .carousel-control-next-icon {
+  filter: invert(1); /* makes the white icon appear black */
+}
+
+/* Dark theme - default Bootstrap already uses white icons */
+.dark-carousel .carousel-control-prev-icon,
+.dark-carousel .carousel-control-next-icon {
+  filter: none;
+}/*# sourceMappingURL=index.css.map */

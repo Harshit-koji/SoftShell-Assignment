@@ -4,6 +4,7 @@ import { MdEmail } from "react-icons/md"
 import { FaLinkedin, FaTwitter } from "react-icons/fa"
 import { Info } from "../Reusable/Info"
 import { Icon } from "../Reusable/Icon"
+import { useThemeStore } from "../../store/themeStore"
 
 
 
@@ -12,7 +13,7 @@ export const Contact = () => {
 
     return (<>
 
-        <div className="container text-white ">
+        <div className="container theme-text ">
             <Headline text="Let's Connect" />
 
            <div className="container my-xxl-3">
@@ -42,10 +43,18 @@ export const Contact = () => {
 
 
 const Form = () => {
+const mode = useThemeStore((state)=> state.mode);
+
+// submit button fuction 
+const handleSubmit = (e)=>{
+    e.preventDefault();
+}
+
+
 
     return (<>
 
-        <form className="d-flex flex-column border border-white p-4 boxShadow my-4" >
+        <form onSubmit={(e)=>handleSubmit(e)} className="d-flex flex-column border border-white p-4 boxShadow rounded-4 my-4" >
             <div className="row mb-3">
                 <div className="col form-floating ">
                     <input type="text" className="form-control  " id="first" placeholder="First name" />
@@ -70,7 +79,7 @@ const Form = () => {
   <option value="2">Two</option>
   <option value="3">Three</option>
 </select> */}
-<button className="btn btn-outline-info ">Submit</button>
+<button type="submit" className={`btn ${mode?"btn-outline-dark":"btn-outline-info"}  `}>Submit</button>
         </form>
 
 

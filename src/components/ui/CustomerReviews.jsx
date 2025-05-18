@@ -1,5 +1,6 @@
 import { Headline } from "../Reusable/Headline"
 import carouselData from "../../services/carousel.json"
+import { useThemeStore } from "../../store/themeStore"
 
 
 
@@ -10,7 +11,7 @@ export const CustomerReviews = ()=>{
 
     return (
         <>
-       <div className="container text-white ">
+       <div className="container theme-text ">
         <Headline text="Testimonials" />
         
         <div className="py-2 d-flex flex-column">
@@ -26,10 +27,10 @@ export const CustomerReviews = ()=>{
 
 
 const Carousel = ()=>{
-
+const mode = useThemeStore(state => state.mode);
 
     return(
- <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
+ <div id="carouselExampleInterval" className={`carousel slide ${mode ? 'light-carousel' : 'dark-carousel'}`} data-bs-ride="carousel">
   <div className="carousel-inner py-5 px-5 px-lg-5 "> {/* Add padding to whole inner area */}
     {carouselData.map((curtElem) => {
       const { id, image, say, name, work } = curtElem;
@@ -67,12 +68,12 @@ const Carousel = ()=>{
 
   {/* Carousel Controls */}
   <button
-    className="carousel-control-prev w-auto"
+    className="carousel-control-prev  w-auto "
     type="button"
     data-bs-target="#carouselExampleInterval"
     data-bs-slide="prev"
   >
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="carousel-control-prev-icon text-info" aria-hidden="true"></span>
     <span className="visually-hidden">Previous</span>
   </button>
   <button

@@ -10,7 +10,7 @@ export const WhyChooseUs = () => {
 
     return (
         <>
-            <div className="container text-center text-white  my-4 pt-2">
+            <div className="container text-center theme-text  my-4 pt-2">
                 <Headline text="Why Choose Us" />
                 <p>Discover a platform built for simplicity, support, and serious payouts — made for anyone looking to turn unused software licenses into real cash.</p>
 

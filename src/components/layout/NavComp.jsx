@@ -15,7 +15,7 @@ export const NavComp = () => {
       <nav className="navbar navbar-expand-lg ">
   <div className="container d-flex justify-content-between align-items-center">
     {/* Brand name/logo */}
-    <a className="navbar-brand theme-text" onClick={(e)=>e.preventDefault()} href="#">SoftShell</a>
+    <a className="navbar-brand theme-text fs-4 " onClick={(e)=>e.preventDefault()} href="#"><i class="bi bi-tags-fill text-primary"></i> SoftShell</a>
 
     {/* Hamburger icon for small screens */}
     <button
@@ -72,9 +72,9 @@ export const NavComp = () => {
       to="contact"
       smooth={true}
       duration={100}
-      className="nav-link theme-text"
+      className="btn btn-primary"
     >
-      Contact
+      Contact Us
     </Link>
   </li>
 </ul>

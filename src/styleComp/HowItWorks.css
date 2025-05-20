@@ -1,8 +1,0 @@
-.cards {
-  transition: all ease-in-out 0.3s;
-  transform: scale(1);
-}
-.cards:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 5px black !important;
-}/*# sourceMappingURL=HowItWorks.css.map */

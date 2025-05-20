@@ -52,16 +52,17 @@ const Form = () => {
                     <label htmlFor="last" className="ps-4">Last Name</label>
                 </div>
             </div>
-
-            <div className="form-floating mb-3">
-                <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" required />
-                <label htmlFor="floatingInput">Email address</label>
+            <div className="row mb-3">
+                <div className="col-12 mb-3 col-md-6 form-floating">
+                    <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" required />
+                    <label htmlFor="floatingInput" className="ps-4">Email address</label>
+                </div>
+                <div className="col-12  col-md-6 form-floating">
+                    <input type="text" className="form-control" id="company" placeholder="Company" required />
+                    <label htmlFor="company" className="ps-4">  Company</label>
+                </div>
             </div>
 
-            <div className="form-floating mb-3">
-                <input type="text" className="form-control" id="company" placeholder="Company" required />
-                <label htmlFor="company">Company</label>
-            </div>
             <div className="form-floating mb-3">
   <select
     className="form-select"
